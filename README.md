@@ -1,6 +1,6 @@
 # SocialPro - Premium Social Media Agentur Website
 
-![SocialPro Website]<img width="1360" alt="image" src="https://github.com/user-attachments/assets/73f000c1-7a61-4cb2-b0c1-39c4f2023f81" />
+<img width="1360" alt="image" src="https://github.com/user-attachments/assets/73f000c1-7a61-4cb2-b0c1-39c4f2023f81" />
 
 ## 🚀 Die Website steht zum Verkauf!
 
