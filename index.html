@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialPro | Premium Social Media Agentur</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="description" content="SocialPro - Ihre Premium Social Media Agentur für strategisches Marketing, Content Creation und Community Management. Maximieren Sie Ihre Online-Präsenz mit unseren maßgeschneiderten Lösungen.">
+</head>
+<body>
+    <!-- Copyright Banner -->
+    <div class="copyright-banner">
+        <span>Interesse an einer eigenen Website? Kontaktieren Sie uns gerne! - &copy; 2025 LEON SCHMIDT - leon@roudges.de</span>
+    </div>
+
+    <!-- Modal für Projektanfrage -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal modal-animation">
+            <button class="modal-close" id="project-modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3>Projektanfrage starten</h3>
+                <p>Lassen Sie uns Ihren Online-Erfolg gemeinsam planen</p>
+            </div>
+            <div class="modal-body">
+                <form class="modal-form" id="project-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ihr Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Ihre E-Mail" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Ihr Anliegen</option>
+                            <option value="website">Social Media Marketing</option>
+                            <option value="branding">Content Creation</option>
+                            <option value="marketing">Community Management</option>
+                            <option value="other">Anderes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Beschreiben Sie kurz Ihr Projekt" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Anfrage absenden</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal für Newsletter -->
+    <div class="modal-overlay" id="newsletter-modal">
+        <div class="modal modal-animation">
+            <button class="modal-close" id="newsletter-modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3>Bleiben Sie auf dem Laufenden</h3>
+                <p>Erhalten Sie monatlich die neuesten Trends im Social Media Marketing</p>
+            </div>
+            <div class="modal-body">
+                <p>Abonnieren Sie unseren Newsletter und erhalten Sie regelmäßig Tipps & Tricks, Branchentrends und exklusive Angebote direkt in Ihr Postfach.</p>
+                <form class="modal-form" id="newsletter-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ihr Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Ihre E-Mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            Ich akzeptiere die <a href="#">Datenschutzbestimmungen</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">Anmelden</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">SocialPro</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#pricing">Preise</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">Über uns</a>
+            <a href="#contact">Kontakt</a>
+        </div>
+        <div class="nav-cta">
+            <a href="#booking" class="booking-btn">Kostenlose Beratung</a>
+        </div>
+        <div class="menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="animate-text">Social Media<br>Excellence</h1>
+                <p class="animate-text">Wir transformieren Ihre digitale Präsenz in ein profitables Geschäft. Mit maßgeschneiderten Strategien und kreativen Lösungen erreichen wir gemeinsam Ihre Ziele.</p>
+                <div class="hero-buttons">
+                    <button class="cta-button" id="open-project-modal">Jetzt starten</button>
+                    <button class="secondary-button" id="open-newsletter-modal">Mehr erfahren</button>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <h3>98%</h3>
+                    <p>Kundenzufriedenheit</p>
+                </div>
+                <div class="stat-card">
+                    <h3>250+</h3>
+                    <p>Erfolgreiche Projekte</p>
+                </div>
+                <div class="stat-card">
+                    <h3>15M+</h3>
+                    <p>Erreichte Nutzer</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-elements">
+                <div class="element"></div>
+                <div class="element"></div>
+                <div class="element"></div>
+            </div>
+            <div class="hero-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2>Unsere Premium Services</h2>
+            <p>Maßgeschneiderte Lösungen für Ihren Erfolg</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3>Social Media Marketing</h3>
+                <p>Strategische Kampagnen für maximale Reichweite und Conversion</p>
+                <ul class="service-features">
+                    <li>Content Strategie & Planung</li>
+                    <li>Paid Advertising & Targeting</li>
+                    <li>Influencer Marketing & Kooperationen</li>
+                    <li>Performance Tracking & Analytics</li>
+                    <li>Kampagnenoptimierung</li>
+                    <li>ROI-Messung & Reporting</li>
+                </ul>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Content Creation</h3>
+                <p>Professionelle Inhalte, die Ihre Marke zum Strahlen bringen</p>
+                <ul class="service-features">
+                    <li>Videoproduktion & Editing</li>
+                    <li>Grafikdesign & Animation</li>
+                    <li>Copywriting & Storytelling</li>
+                    <li>Content Planning & Kalender</li>
+                    <li>Brand Guidelines</li>
+                    <li>Content Distribution</li>
+                </ul>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Community Management</h3>
+                <p>Engagement und Wachstum Ihrer Community</p>
+                <ul class="service-features">
+                    <li>Community Building & Engagement</li>
+                    <li>Social Listening & Monitoring</li>
+                    <li>Krisenmanagement & PR</li>
+                    <li>Engagement Strategie</li>
+                    <li>Moderation & Support</li>
+                    <li>Community Events & Aktivitäten</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="section-header">
+            <h2>Unsere Premium Pakete</h2>
+            <p>Flexible Lösungen für jedes Budget</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card" data-aos="fade-up">
+                <div class="pricing-header">
+                    <h3>Starter</h3>
+                    <div class="price">
+                        <span class="amount">€499</span>
+                        <span class="period">/Monat</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li>Social Media Management (2 Plattformen)</li>
+                    <li>Content Creation (8 Posts/Monat)</li>
+                    <li>Community Management</li>
+                    <li>Wöchentliche Reports</li>
+                    <li>Basic Analytics</li>
+                    <li>Email Support</li>
+                </ul>
+                <button class="pricing-cta" id="pricing-starter-btn">Jetzt starten</button>
+            </div>
+            <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                <div class="pricing-header">
+                    <h3>Professional</h3>
+                    <div class="price">
+                        <span class="amount">€999</span>
+                        <span class="period">/Monat</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li>Alles aus Starter</li>
+                    <li>Social Media Management (4 Plattformen)</li>
+                    <li>Content Creation (16 Posts/Monat)</li>
+                    <li>Paid Advertising Budget</li>
+                    <li>Influencer Marketing</li>
+                    <li>Tägliche Reports</li>
+                    <li>Dedizierter Manager</li>
+                    <li>Priority Support</li>
+                </ul>
+                <button class="pricing-cta" id="pricing-professional-btn">Jetzt starten</button>
+            </div>
+            <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="pricing-header">
+                    <h3>Enterprise</h3>
+                    <div class="price">
+                        <span class="amount">Individuell</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li>Alles aus Professional</li>
+                    <li>Unbegrenzte Plattformen</li>
+                    <li>Unbegrenzter Content</li>
+                    <li>24/7 Support</li>
+                    <li>Custom Solutions</li>
+                    <li>Dediziertes Team</li>
+                    <li>Strategie Workshops</li>
+                    <li>Executive Reports</li>
+                </ul>
+                <button class="pricing-cta" id="pricing-enterprise-btn">Kontaktieren Sie uns</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="booking-content">
+            <div class="booking-text">
+                <h2>Kostenlose Erstberatung</h2>
+                <p>Lassen Sie uns gemeinsam Ihre Social Media Strategie entwickeln. In einem persönlichen Gespräch analysieren wir Ihre Ziele und zeigen Ihnen, wie wir Sie unterstützen können.</p>
+                <ul class="booking-benefits">
+                    <li><i class="fas fa-check"></i> Kostenlose Analyse Ihrer aktuellen Präsenz</li>
+                    <li><i class="fas fa-check"></i> Individuelle Strategieempfehlungen</li>
+                    <li><i class="fas fa-check"></i> Konkrete Handlungsempfehlungen</li>
+                    <li><i class="fas fa-check"></i> Unverbindliches Angebot</li>
+                </ul>
+            </div>
+            <div class="booking-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="E-Mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Telefon" required>
+                        <select required>
+                            <option value="" disabled selected>Interessensgebiet</option>
+                            <option value="marketing">Social Media Marketing</option>
+                            <option value="content">Content Creation</option>
+                            <option value="community">Community Management</option>
+                            <option value="strategy">Strategieberatung</option>
+                            <option value="other">Anderes</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="Ihre Nachricht" required></textarea>
+                    <button type="submit" class="submit-btn">Termin vereinbaren</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="section-header">
+            <h2>Unsere Erfolgsgeschichten</h2>
+            <p>Erfolgreiche Projekte, die wir umgesetzt haben</p>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-aos="fade-up">
+                <div class="portfolio-image">
+                    <img src="https://i.pinimg.com/736x/7e/76/5e/7e765e8cdeca15ad731bc82343e80180.jpg" alt="Brand Transformation">
+                </div>
+                <div class="portfolio-overlay">
+                    <div class="portfolio-content">
+                        <h3>Brand Transformation</h3>
+                        <p>Social Media Kampagne für Fashion Brand</p>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <span>+250%</span>
+                                <p>Engagement</p>
+                            </div>
+                            <div class="stat">
+                                <span>+150%</span>
+                                <p>Reichweite</p>
+                            </div>
+                            <div class="stat">
+                                <span>+80%</span>
+                                <p>Conversion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="portfolio-image">
+                    <img src="https://logopony.co.uk/assets/logo-design/letter/1.jpg" alt="Content Strategy">
+                </div>
+                <div class="portfolio-overlay">
+                    <div class="portfolio-content">
+                        <h3>Content Strategy</h3>
+                        <p>Branding & Content für Tech Startup</p>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <span>+300%</span>
+                                <p>Follower</p>
+                            </div>
+                            <div class="stat">
+                                <span>+200%</span>
+                                <p>Conversion</p>
+                            </div>
+                            <div class="stat">
+                                <span>+150%</span>
+                                <p>Leads</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="portfolio-image">
+                    <img src="https://static.vecteezy.com/system/resources/previews/007/085/972/non_2x/one-letter-logo-design-on-black-background-one-creative-initials-letter-logo-concept-one-letter-design-vector.jpg" alt="Community Growth">
+                </div>
+                <div class="portfolio-overlay">
+                    <div class="portfolio-content">
+                        <h3>Community Growth</h3>
+                        <p>Community Management für Lifestyle Brand</p>
+                        <div class="portfolio-stats">
+                            <div class="stat">
+                                <span>+400%</span>
+                                <p>Interaktion</p>
+                            </div>
+                            <div class="stat">
+                                <span>+180%</span>
+                                <p>Loyalty</p>
+                            </div>
+                            <div class="stat">
+                                <span>+120%</span>
+                                <p>UGC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Über SocialPro</h2>
+                <p>Wir sind ein Team von kreativen Experten, die sich auf innovative Social Media Lösungen spezialisiert haben. Unsere Mission ist es, Ihren digitalen Fußabdruck zu stärken und Ihre Marke zum Strahlen zu bringen.</p>
+                <p>Mit über 5 Jahren Erfahrung in der digitalen Welt haben wir uns als führende Social Media Agentur etabliert. Unser Team besteht aus erfahrenen Strategen, kreativen Content-Experten und technischen Spezialisten, die gemeinsam maßgeschneiderte Lösungen entwickeln.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>100+</h3>
+                        <p>Zufriedene Kunden</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>Jahre Erfahrung</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Erfolgreiche Projekte</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="team-image">
+                    <img src="https://thispersondoesnotexist.com/" alt="Unser Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Kontaktieren Sie uns</h2>
+            <p>Wir freuen uns auf Ihre Nachricht</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Adresse</h3>
+                        <p>Musterstraße 123, 10115 Berlin</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Telefon</h3>
+                        <p>+49 123 456789</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@socialpro.de</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Öffnungszeiten</h3>
+                        <p>Mo-Fr: 9:00 - 18:00 Uhr</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="E-Mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Telefon">
+                        <select required>
+                            <option value="" disabled selected>Anliegen</option>
+                            <option value="general">Allgemeine Anfrage</option>
+                            <option value="project">Projektanfrage</option>
+                            <option value="support">Support</option>
+                            <option value="partnership">Partnerschaft</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="Ihre Nachricht" required></textarea>
+                    <button type="submit" class="submit-btn">Nachricht senden</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SocialPro</h3>
+                <p>Ihre Premium Social Media Agentur für strategisches Marketing, Content Creation und Community Management.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Social Media Marketing</a></li>
+                    <li><a href="#">Content Creation</a></li>
+                    <li><a href="#">Community Management</a></li>
+                    <li><a href="#">Paid Advertising</a></li>
+                    <li><a href="#">Influencer Marketing</a></li>
+                    <li><a href="#">Social Media Beratung</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Email: info@socialpro.de</p>
+                <p>Tel: +49 123 456789</p>
+                <p>Adresse: Musterstraße 123, Berlin</p>
+                <p>Öffnungszeiten: Mo-Fr 9:00-18:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Rechtliches</h3>
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">AGB</a></li>
+                    <li><a href="#">Cookie-Richtlinie</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Abonnieren Sie unseren Newsletter für die neuesten Updates und Angebote.</p>
+                <button class="secondary-button" id="footer-newsletter-btn">Anmelden</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 LEON SCHMIDT - ROUDGES. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
