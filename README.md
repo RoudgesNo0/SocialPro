@@ -1,6 +1,6 @@
 # SocialPro - Premium Social Media Agentur Website
 
-![SocialPro Website](https://i.imgur.com/0gQfW5Z.png)
+![SocialPro Website]<img width="1360" alt="image" src="https://github.com/user-attachments/assets/73f000c1-7a61-4cb2-b0c1-39c4f2023f81" />
 
 ## 🚀 Die Website steht zum Verkauf!
 
@@ -77,13 +77,12 @@ Die Website kann leicht angepasst werden:
 
 Haben Sie Interesse an dieser Website oder möchten Sie ein individuelles Angebot?
 
-- **E-Mail:** [verkauf@example.com](mailto:verkauf@example.com)
-- **Telefon:** +49 123 456789
+- **E-Mail:** [leon@roudges.de](mailto:leon@roudges.de)
 
 ## 🔍 Live-Vorschau
 
-Eine Demo der Website finden Sie unter: [https://example.com/socialpro-demo](https://example.com/socialpro-demo)
+Eine Demo der Website finden Sie unter: [https://socialpro.roudges.de](https://socialpro.roudges.de)
 
 ---
 
-&copy; 2024 LEON SCHMIDT - ROUDGES. Alle Rechte vorbehalten. 
+&copy; 2025 LEON SCHMIDT - ROUDGES. Alle Rechte vorbehalten. 
